@@ -2,11 +2,14 @@ const {
     ExtractJwt,
     Strategy
 } = require('passport-jwt')
-const data = require('./mockData.js')
+const data = require('./mockData')
 
 const options = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: data.secret
+    secretOrKey: data.secret,
+    jsonWebTokenOptions: {
+        expiresIn: 600 // 10min
+    }
 }
 
 module.exports = function(passport) {
