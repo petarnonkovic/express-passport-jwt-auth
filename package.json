@@ -1,0 +1,31 @@
+{
+    "name": "express-passport-jwt-auth",
+    "version": "0.0.1",
+    "description": "Simple passport-jwt authentication runs on node-express server",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js --watch ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/petarnonkovic/express-passport-jwt-auth.git"
+    },
+    "keywords": [],
+    "author": "petar <petar.non@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/petarnonkovic/express-passport-jwt-auth/issues"
+    },
+    "homepage": "https://github.com/petarnonkovic/express-passport-jwt-auth#readme",
+    "dependencies": {
+        "compression": "^1.7.3",
+        "express": "^4.16.4",
+        "jsonwebtoken": "^8.5.0",
+        "morgan": "^1.9.1",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10"
+    }
+}
